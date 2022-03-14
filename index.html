@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="CSS/my-bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon " href="favicon/favicon.png">
+</head>
+
+<body class=" vh-100">
+    <main class="container-sm d-flex justify-content-center h-100">
+            <section class="row justify-content-center align-items-center m-0 " style="width: 350px;">
+               <section class="calcul calculdark m-0 ">
+                    <div class="ecrans row my-0 " style="height: 140px;">
+                        <div id="ecran" class="fs-2 d-flex align-items-center justify-content-end text-end  px-3 border-0 ">0</div>
+                    </div>
+                    <div class="row  position-relative">
+                        <div class="display d-flex border-bottom border-2 border-info fs-6 col-12 align-items-center justify-content-between">
+                            <div id="toggle" class="btn dark col-3 py-3"><i class="bi fs-4 bi-brightness-high"></i></div>
+                            <div id="backspace" class="btn dark py-3 col-3 fs-4 text-bold">🠔</div>
+                        </div>
+                    </div>
+                    <div class="row  ">
+                        <div data-key="8" id ="clr" class="btn dark fs-3 py-3 col-3" >C</div>
+                        <div data-key="53" class="btn dark   fs-3 py-3 col-3 " >%</div>
+                        <div data-key="219" class="btn dark  fs-3 py-3  col-3" >√</div>
+                        <div data-key="107" class="btn dark operator  fs-3 py-3 col-3 " >+</div>
+                    </div>
+                    <div class="row ">
+                        <div data-key="103" class="btn dark  fs-3 py-3 col-3" >7</div>
+                        <div data-key="104" class="btn dark  fs-3 py-3 col-3" >8</div>
+                        <div data-key="105" class="btn dark  fs-3 py-3 col-3" >9</div>
+                        <div data-key="109" class="btn dark  fs-3 py-3 col-3" >-</div>
+                    </div>
+                    <div class="row ">
+                        <div data-key="100" class="btn dark  fs-3 py-3  col-3" >4</div>
+                        <div data-key="101" class="btn dark  fs-3 py-3 col-3" >5</div>
+                        <div data-key="102" class="btn dark  fs-3 py-3 col-3" >6</div>
+                        <div data-key="106" class="btn dark  fs-3 py-3 col-3" >x</div>
+                    </div>
+                    <div class="row ">
+                        <div data-key="97" class="btn dark  fs-3 py-3 col-3" >1</div>
+                        <div data-key="98" class="btn dark  fs-3 py-3 col-3" >2</div>
+                        <div data-key="99" class="btn dark  fs-3 py-3 col-3" >3</div>
+                        <div data-key="111" class="btn dark fs-3 py-3 col-3 " >÷</div>
+                    </div>
+                    <div class="row ">
+                        <div data-key="219" id="negation" class="btn dark fs-3 py-3 col-3" >+/-</div>
+                        <div data-key="96" class="btn dark  fs-3 py-3 col-3 ">0</div>
+                        <div data-key="110" class="btn dark fs-3 py-3 col-3 " >.</div>
+                        <div data-key="13" id="egal" class="btn dark  fs-3 py-3 col-3 " >=</div>
+                    </div>
+               </section>
+            </section>
+    </main>
+    <script src="js/JS.js"></script>
+</body>
+
+</html>

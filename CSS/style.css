@@ -1,0 +1,84 @@
+:root{
+    --ecriture : #ffffff;
+    --fond : #0c263b;
+}
+
+*{
+    margin: O;
+    padding: O;
+}
+
+body{
+ background-color:var(--ecriture);
+}
+
+body.dar{
+    background-color:var(--fond);
+   }
+
+.dark {
+    background-color: var(--fond);
+    color: var(--ecriture);
+}
+
+.btn{
+    border-radius: 0%;
+    border:0;
+}
+
+.btn:hover{
+    color:var(--ecriture);
+    background-color: #0e2335;
+}
+
+.hover:hover{
+    color:var(--fond);
+    background-color:rgb(235, 229, 229);
+}
+
+#toggle:hover,
+#backspace:hover{
+    color:var(--ecriture);
+    background-color: transparent;
+}
+
+.mover:hover{
+    color:var(--ecriture);
+    background-color: transparent;
+}
+
+#clr{
+    color:rgb(245, 112, 35);
+}
+
+#egal{
+    background:linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
+    border-bottom-right-radius: 12px;
+}
+
+#negation{
+    border-bottom-left-radius: 12px;
+}
+
+.calcul{
+    background-color: white;
+    color:#0c263b;
+    border-radius: 12px;
+}
+
+.calculdark{
+    background-color: #0c263b;
+    color:white;
+}
+
+.ecransdark{
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    background:linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
+    color: var(--ecriture);
+}
+
+.ecrandark{
+    background:linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
+    color: var(--ecriture);
+}
