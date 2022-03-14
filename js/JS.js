@@ -8,8 +8,6 @@ let display = "";
 
 let operation = null;
 
-let memoire;
-
 window.onload = () => {
     let touches = document.querySelectorAll(".btn");
 
