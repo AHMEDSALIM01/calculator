@@ -1,4 +1,3 @@
-// Variables globales
 const ecranElt = document.querySelector("#ecran");
 const theme = document.querySelector("#toggle");
 
@@ -90,20 +89,11 @@ function gererTouches(event){
                 break;
             case "=":
             case "Enter":
-                if((previous >0 || previous <0) && (parseFloat(display)>0 || parseFloat(display)<0) && operation != ""){
-                    previous = (previous === 0) ? parseFloat(display) : calculer(previous, parseFloat(display), operation);
+                    previous =  calculer(previous, parseFloat(display), operation);
                     ecranElt.innerText = parseFloat(previous).toLocaleString("en");
                     display = previous;
                     previous = 0;
-                }else{
-                    if(previous>0){
-                        ecranElt.innerText = previous;
-                        display=previous;
-                        previous=0;
-                    }else
-                    ecranElt.innerText = display;
-                }
-                
+                    display = "";
                 break;
             default:
                 break;
